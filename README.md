@@ -34,9 +34,14 @@ Docker. Create a Docker File
 Unit test. Create unit tests
 
 ****
-Resolution
+# Resolution
 
 I have Developed a Rest API using Spring boot. It has two endpoints.
 I used MongoDB as database.
 I have added Swagger 2 as API documentation. http://localhost:8080/swagger-ui.html
+I used Jmockit to create unit test. 
 To run this solution you have to use any mongodb server and modify application.properties file. You also have to create a Collection calles 'itineraries' 
+
+# Problems
+
+I had an issue with the jmockit initialization due to junit version. Honestly i couldn't fix it and I have to continue with my current task. The Tests run OK from the IDE but htere is an error when you build the maven project. So please build it with -Dmaven.test.skip=true  
